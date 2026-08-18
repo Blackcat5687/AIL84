@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.notekeep.local.graph.GraphCanvasView
+        android:id="@+id/graphCanvasView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:gravity="center"
+        android:text="@string/graph_empty"
+        android:textColor="#E2E8F0"
+        android:alpha="0.6"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/settingsToggleBtn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="top|left"
+        android:layout_margin="16dp"
+        android:background="@drawable/graph_toolbar_btn_bg"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="⚙"
+        android:textColor="#E2E8F0"
+        android:textSize="20sp"
+        android:contentDescription="@string/action_settings" />
+
+    <com.notekeep.local.graph.GraphSettingsPanelView
+        android:id="@+id/graphSettingsPanel"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="6dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/graphHintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="12dp"
+        android:alpha="0.4"
+        android:text="@string/graph_hint"
+        android:textColor="#E2E8F0"
+        android:textSize="10.5sp" />
+
+</FrameLayout>
